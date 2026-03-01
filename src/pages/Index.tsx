@@ -1,30 +1,24 @@
-import HeroSection from "@/components/HeroSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import InstructorsSection from "@/components/InstructorsSection";
-import PricingSection from "@/components/PricingSection";
-import FAQSection from "@/components/FAQSection";
-import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <div className="min-h-screen bg-background">
       <Navigation />
-      <HeroSection />
-      <HowItWorksSection />
-      <div id="features">
-        <FeaturesSection />
-      </div>
-      <div id="instructors">
-        <InstructorsSection />
-      </div>
-      <div id="pricing">
-        <PricingSection />
-      </div>
-      <div id="faq">
-        <FAQSection />
-      </div>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Education />
+      <Contact />
       <Footer />
     </div>
   );
